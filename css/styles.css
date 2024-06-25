@@ -83,7 +83,8 @@ a:focus
 .features {
     color: #2e2f42;
     width: 1158px; 
-    padding: 0 15px; 
+    /*padding: 0 15px; */
+    padding: 0 96px;
     margin: 120px auto;
 
  
@@ -292,16 +293,18 @@ img {
 
 .features-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    /*gap: 24px;*/
+    gap: 72px;
     justify-content: center;
-    padding-left: 0; 
-margin: 0;
+    /*padding-left: 0; 
+margin: 0;*/
 
  
 }
 
 .features-item {
-    width: calc((100% - 3 * 24px) / 4);
+    /*width: calc((100% - 3 * 24px) / 4);*/
 }
 
 .team-list {
@@ -579,11 +582,11 @@ align-items: center;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.is-open {
+/*.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-}
+}*/
 
 .modal{
     position: absolute;
@@ -857,4 +860,14 @@ cursor: pointer;
 
 .modal-field-policy{
     margin-bottom: 24px;
+}
+
+/*Media*/
+
+
+@media and (min-width:768px) {
+    .container {
+        width:768px; 
+        padding: 0 16px;
+    }
 }
